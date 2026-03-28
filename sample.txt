@@ -1,0 +1,91 @@
+{
+    "text": " I will tell you about index and block element by making index.html So I hit enter by hitting exclamation mark And I could have typed this too but I won't do it because why type",
+    "segments": [
+        {
+            "id": 0,
+            "seek": 0,
+            "start": 0.0,
+            "end": 5.36,
+            "text": " I will tell you about index and block element by making index.html",
+            "tokens": [
+                50364,
+                286,
+                486,
+                980,
+                291,
+                466,
+                8186,
+                293,
+                3461,
+                4478,
+                538,
+                1455,
+                8186,
+                13,
+                357,
+                15480,
+                50632
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.785788596944606,
+            "compression_ratio": 1.3134328358208955,
+            "no_speech_prob": 0.26072749495506287
+        },
+        {
+            "id": 1,
+            "seek": 0,
+            "start": 5.36,
+            "end": 7.36,
+            "text": " So I hit enter by hitting exclamation mark",
+            "tokens": [
+                50632,
+                407,
+                286,
+                2045,
+                3242,
+                538,
+                8850,
+                1624,
+                43233,
+                1491,
+                50732
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.785788596944606,
+            "compression_ratio": 1.3134328358208955,
+            "no_speech_prob": 0.26072749495506287
+        },
+        {
+            "id": 2,
+            "seek": 0,
+            "start": 7.36,
+            "end": 10.36,
+            "text": " And I could have typed this too but I won't do it because why type",
+            "tokens": [
+                50732,
+                400,
+                286,
+                727,
+                362,
+                33941,
+                341,
+                886,
+                457,
+                286,
+                1582,
+                380,
+                360,
+                309,
+                570,
+                983,
+                2010,
+                50882
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.785788596944606,
+            "compression_ratio": 1.3134328358208955,
+            "no_speech_prob": 0.26072749495506287
+        }
+    ],
+    "language": "hi"
+}
