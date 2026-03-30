@@ -3,6 +3,7 @@ import os
 import json
 import pandas as pd
 import numpy as np
+import joblib
 from sklearn.metrics.pairwise import cosine_similarity
 # def create_embedding(text):
 #     r = requests.post("http://localhost:11434/api/embeddings", json={
@@ -33,47 +34,31 @@ def create_embedding(text_list):
         return None
 
 
-
-jsons = os.listdir("jsons")
-my_dicts = []
-chunk_id = 0
-for json_file in jsons:
-    if not json_file.endswith(".json"):
-        continue
-    # Reading the json file
-    with open(f"jsons/{json_file}", "r", encoding="utf-8", errors="ignore") as f:
-        data = json.load(f) #converts the json file into python dictionary(chunk: value, text: value)
-    print(f"Creating embeddings for : {json_file}")
-    embeddings = create_embedding([chunk['text'] for chunk in data["chunks"]])
-    for i,chunk in enumerate(data["chunks"]):
-        chunk["chunk_id"] = chunk_id
-        chunk['embedding'] = embeddings[i]
-        chunk_id += 1
-        my_dicts.append(chunk)
-        if(i == 3): # Read 5 chunks for now
-            break
-    break
+def main():
+    jsons = os.listdir("jsons")
+    my_dicts = []
+    chunk_id = 0
+    for json_file in jsons:
+        if not json_file.endswith(".json"):
+            continue
+        # Reading the json file
+        with open(f"jsons/{json_file}", "r", encoding="utf-8", errors="ignore") as f:
+            data = json.load(f) #converts the json file into python dictionary(chunk: value, text: value)
+        print(f"Creating embeddings for : {json_file}")
+        embeddings = create_embedding([chunk['text'] for chunk in data["chunks"]])
+        for i,chunk in enumerate(data["chunks"]):
+            chunk["chunk_id"] = chunk_id
+            chunk['embedding'] = embeddings[i]
+            chunk_id += 1
+            my_dicts.append(chunk)
+            
 
 
 
-df = pd.DataFrame.from_records(my_dicts)
-# print(df)
+    df = pd.DataFrame.from_records(my_dicts)
+    # print(df)
+    joblib.dump(df, "embeddings.joblib")
 
-incoming_query = input("Ask a Question: ")
+if __name__ == "__main__":
+    main()
 
-query_embedding = create_embedding([incoming_query])[0]
-
-# print(df['embedding'].values)
-
-# Find question similarity with other embeddings
-
-# print(np.vstack(df['embedding'].values))
-# print(np.vstack(df['embedding']).shape)
-
-similarity = cosine_similarity([query_embedding], np.vstack(df['embedding'].values)).flatten()
-
-max_idx = similarity.argsort()[: : -1][0: 3]
-
-new_df = df.iloc[max_idx]
-
-print(new_df[['title','number','text']])
