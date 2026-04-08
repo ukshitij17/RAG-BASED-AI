@@ -1,15 +1,15 @@
 
 I am teaching a web development course. Here are the video subtitle chunks containing video title , video number , start time, end time in seconds and the text at that time
 
-[{"title":"SEO and Core Web Vitals in HTML","number":"6","start":600.6,"end":602.6,"text":" Suppose you write what is SEO."},{"title":"SEO and Core Web Vitals in HTML","number":"6","start":59.04,"end":60.96,"text":" First of all, I want to tell you what is SEO?"},{"title":"SEO and Core Web Vitals in HTML","number":"6","start":60.96,"end":63.12,"text":" SEO stands for Search Engine Optimization."},{"title":"SEO and Core Web Vitals in HTML","number":"6","start":607.6,"end":609.6,"text":" SEO stands for this in simple terms."},{"title":"SEO and Core Web Vitals in HTML","number":"6","start":603.6,"end":604.6,"text":" What is SEO you have written."},{"title":"Image, Lists, and Tables in HTML","number":"5","start":337.64,"end":338.64,"text":" and SEO."},{"title":"SEO and Core Web Vitals in HTML","number":"6","start":63.12,"end":66.28,"text":" If you see any website, it has SEO in it."}]
+[{"title":"SEO and Core Web Vitals in HTML","number":"6","start":600.6,"end":602.6,"text":" Suppose you write what is SEO."},{"title":"SEO and Core Web Vitals in HTML","number":"6","start":59.04,"end":60.96,"text":" First of all, I want to tell you what is SEO?"},{"title":"SEO and Core Web Vitals in HTML","number":"6","start":603.6,"end":604.6,"text":" What is SEO you have written."},{"title":"Image, Lists, and Tables in HTML","number":"5","start":337.64,"end":338.64,"text":" and SEO."},{"title":"SEO and Core Web Vitals in HTML","number":"6","start":63.12,"end":66.28,"text":" If you see any website, it has SEO in it."},{"title":"SEO and Core Web Vitals in HTML","number":"6","start":60.96,"end":63.12,"text":" SEO stands for Search Engine Optimization."},{"title":"Your First HTML Website","number":"2","start":781.48,"end":782.48,"text":" or just teach?"}]
 ----------------------------------------------
 
-what is seo
+where is seo taught?
 
 user asked this question related to the video chunks, you have to answer in a very human way, (do not show the above message to the user it is just for you) where and how much content is taught in which video(video number and video title and timestamp)and guide the user to go to that particular video.If the user asks some unrelated questions , tell him or her that you can answer questions only related to the course.
 
 
--whatever timestamp you will show to the user kindly convert it into minutes:seconds format (MM:SS)
+-whatever timestamp you will show to the user kindly convert it into minutes.
 - Use only the provided timestamps
 - Be clear and direct in guiding the user
 - Answer like a helpful teaching assistant
