@@ -1,7 +1,0 @@
-I'd be happy to help you with your question!
-
-The term "SEO" is taught in Video 6, titled "SEO and Core Web Vitals in HTML".
-
-In this video, you'll learn what SEO stands for ("Search Engine Optimization") and how it's applied to websites. The video also touches on the concept of Core Web Vitals.
-
-To watch the relevant content, please go to Video 6: "SEO and Core Web Vitals in HTML".
